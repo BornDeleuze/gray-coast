@@ -1,26 +1,41 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Events from './Pages/Events';
+import Contact from './Pages/Contact';
+import Donate from './Pages/Donate';
+import Get_Involved from './Pages/Get_Involved';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+            <Router>
         <div class="text-gray-600">
           <div>
-            <nav class="px-8 py-2 bg-gray-900 text-gray-200">
-              <ul class="flex justify-evenly">
-                <li><a href="/pages/about.html"><span>About</span></a></li>
-                <li><a href="/pages/events.html"><span>Events</span></a></li>
-                <li><a href="/pages/donate.html"><span>Donate</span></a></li>
-                <li><a href="/pages/get_involved.html"><span>Get Involved</span></a></li>
-              </ul>
-            </nav>
+              <nav class="px-8 py-2 bg-gray-900 text-gray-200">
+                <ul class="flex justify-evenly">
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/about">About</Link></li>
+                  <li><Link to="/events">Events</Link></li>
+                  <li><Link to="/contact">Contact</Link></li>
+                  <li><Link to="/donate">Donate</Link></li>
+                  <li><Link to="/get_involved">Get Involved</Link></li>
+                </ul>
+              </nav>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/events" element={<Events />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/donate" element={<Donate />} />
+                <Route path="/get_involved" element={<Get-Involved />} />
+              </Routes>
           </div>
           <div>
             <a href="/"
             >
-              <img src="/public/images/sunset.jpg" class="relative text-center"/>
+              <img src="/images/sunset.jpg" class="relative text-center"/>
               <h5 class="text-xlg top-100px absolute text-red-900"> Gray Coast Guildhall </h5>
             </a>
           </div>
@@ -56,6 +71,7 @@ function App() {
             </div>
           </div>
         </div>
+        </Router>
     </>
   )
 }
