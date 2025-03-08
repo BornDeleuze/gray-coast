@@ -4,32 +4,25 @@ import About from './Pages/About';
 import Events from './Pages/Events';
 import Contact from './Pages/Contact';
 import Donate from './Pages/Donate';
-import Get_Involved from './Pages/Get_Involved';
+import GetInvolved from './Pages/Get_Involved';
+import NavBar from './Components/NavBar.jsx';
+
 import './App.css';
 
 function App() {
   return (
     <>
-            <Router>
+      <Router>
         <div class="text-gray-600">
           <div>
-              <nav class="px-8 py-2 bg-gray-900 text-gray-200">
-                <ul class="flex justify-evenly">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/events">Events</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>
-                  <li><Link to="/donate">Donate</Link></li>
-                  <li><Link to="/get_involved">Get Involved</Link></li>
-                </ul>
-              </nav>
+           <NavBar/>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/events" element={<Events />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/donate" element={<Donate />} />
-                <Route path="/get_involved" element={<Get-Involved />} />
+                <Route path="/get_involved" element={<GetInvolved />} />
               </Routes>
           </div>
           <div>
