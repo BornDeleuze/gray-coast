@@ -2,16 +2,16 @@ const Home = () => {
   return (
     <>
       <div>
-        <a href="/"
-        >
-          <img src="/images/sunset.jpg" class="relative text-center"/>
-          <h5 class="text-xlg top-100px absolute text-red-900"> Gray Coast Guildhall </h5>
+        <a href="/">
+          <div class="relative">
+            <img src="/images/sunset.jpg" class="relative text-center w-full"/>
+              <h5 class="absolute text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap uppercase">
+                Gray Coast Guildhall
+              </h5>
+          </div>
         </a>
       </div>
       <div>
-        <header>
-          {/* <h3 class="text-lg"> Gray Coast Guildhall </h3> */}
-        </header>
         <h3>
           Welcome
         </h3>
