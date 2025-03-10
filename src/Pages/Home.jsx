@@ -5,16 +5,16 @@ const Home = () => {
         <a href="/">
           <div class="relative">
             <img src="/images/sunset.jpg" class="relative text-center w-full"/>
-              <h5 class="absolute text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-nowrap uppercase">
+              <h5 class="absolute text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-nowrap uppercase drop-shadow-lg">
                 Gray Coast Guildhall
               </h5>
           </div>
         </a>
       </div>
       <div>
-        <h3>
+        <h1 class="text-center m-8 text-2xl">
           Welcome
-        </h3>
+        </h1>
         <div>
           The Gray Coast Guildhall is a space for gathering, creating, organizing, and performing. Our home is the Old Theater Building in Quilcene, Washington, on traditional Twana & S’Klallam territory.
           We provide space for music events and other performances, meetings and gatherings, dances, movie nights, and more. We are working on creating space for local artists and crafters to set up small working studios.
