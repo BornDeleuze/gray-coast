@@ -22,8 +22,8 @@ const Home = () => {
         </div>
         <img src="/public/images/back.jpg"/>
       </div>
-    <div>
-        <div>
+    <div class="flex justify-evenly h-50 items-center">
+        <div class="text-center">
           <h4>
             Visit Us
           </h4>
@@ -33,7 +33,7 @@ const Home = () => {
             USA
           </h5>
         </div>
-        <div>
+        <div class="text-center">
           <h4>
             Send us a message
           </h4>
