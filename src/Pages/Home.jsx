@@ -37,6 +37,11 @@ const Home = () => {
           <h4>
             Send us a message
           </h4>
+          <form action="https://formsubmit.co/6cf70ccd3364c6b0fbdd1583a2d652e9" method="POST">
+              email <input type="email" name="email" required/>
+              message <input type="text" name="message" required/>
+              <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </>
