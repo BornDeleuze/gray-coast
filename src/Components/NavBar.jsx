@@ -9,7 +9,7 @@ class NavBar extends React.Component {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/events">Events</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          {/* <li><Link to="/contact">Contact</Link></li> */}
           <li><Link to="/donate">Donate</Link></li>
           <li><Link to="/get_involved">Get Involved</Link></li>
         </ul>
