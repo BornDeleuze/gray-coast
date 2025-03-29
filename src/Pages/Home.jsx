@@ -38,8 +38,8 @@ const Home = () => {
             Send us a message
           </h4>
           <form action="https://formsubmit.co/6cf70ccd3364c6b0fbdd1583a2d652e9" method="POST">
-              email <input type="email" name="email" required/>
-              message <input type="text" name="message" required/>
+              email <input type="email" name="email" class="border-2 border-blue-700 rounded-md" required/>
+              message <input type="text" name="message" class="border-2 border-blue-700 rounded-md" required/>
               <button type="submit">Send</button>
           </form>
         </div>
