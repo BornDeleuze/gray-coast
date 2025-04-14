@@ -5,26 +5,30 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="px-8 py-2 bg-gray-900 text-gray-200 relative z-50">
+    <nav className="px-8 py-4 bg-gray-900 text-gray-200 relative z-50">
       <div className="flex justify-between items-center relative">
+        <div className="flex-1">
+         {/* logo? */}
+        </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-gray-200 focus:outline-none absolute top-2 right-4 z-50"
+          className="md:hidden flex flex-col justify-between w-7 h-6 z-50 relative"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
+          <span
+            className={`block h-0.5 bg-gray-200 transition-transform duration-300 ease-in-out origin-center ${
+              menuOpen ? "rotate-45 translate-y-2.75" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 bg-gray-200 transition-all duration-300 ease-in-out origin-center ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 bg-gray-200 transition-transform duration-300 ease-in-out origin-center ${
+              menuOpen ? "-rotate-45 -translate-y-2.75" : ""
+            }`}
+          />
         </button>
       </div>
       <ul
