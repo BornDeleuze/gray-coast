@@ -7,8 +7,6 @@ const NavBar = () => {
   return (
     <nav className="px-8 py-2 bg-gray-900 text-gray-200 relative z-50">
       <div className="flex justify-between items-center relative">
-      <div className="h-9">
-      </div> 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-gray-200 focus:outline-none absolute top-2 right-4 z-50"
@@ -32,7 +30,7 @@ const NavBar = () => {
       <ul
         className={`${
           menuOpen ? "block" : "hidden"
-        } absolute top-full right-0 bg-gray-900 w-full md:static md:flex justify-evenly uppercase mt-2 md:mt-0 z-50`}
+        } absolute top-full right-0 bg-gray-900 w-full md:static md:flex justify-center uppercase mt-2 md:mt-0 z-50`}
       >
         <li><Link to="/" className="block py-2 px-4 hover:text-gray-400">Home</Link></li>
         <li><Link to="/about" className="block py-2 px-4 hover:text-gray-400">About</Link></li>
