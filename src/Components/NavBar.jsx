@@ -32,15 +32,25 @@ const NavBar = () => {
         </button>
       </div>
       <ul
-        className={`${
-          menuOpen ? "block" : "hidden"
-        } absolute top-full right-0 bg-gray-900 w-full md:static md:flex justify-center uppercase mt-2 md:mt-0 z-50`}
+        className={`fixed top-0 right-0 h-full w-2/5 bg-gray-900 text-gray-200 transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
-        <li><Link to="/" className="block py-2 px-4 hover:text-gray-400">Home</Link></li>
-        <li><Link to="/about" className="block py-2 px-4 hover:text-gray-400">About</Link></li>
-        <li><Link to="/events" className="block py-2 px-4 hover:text-gray-400">Events</Link></li>
-        <li><Link to="/donate" className="block py-2 px-4 hover:text-gray-400">Donate</Link></li>
-        <li><Link to="/get_involved" className="block py-2 px-4 hover:text-gray-400">Get Involved</Link></li>
+        <li>
+          <Link to="/" className="block py-4 px-6 hover:text-gray-400">Home</Link>
+        </li>
+        <li>
+          <Link to="/about" className="block py-4 px-6 hover:text-gray-400">About</Link>
+        </li>
+        <li>
+          <Link to="/events" className="block py-4 px-6 hover:text-gray-400">Events</Link>
+        </li>
+        <li>
+          <Link to="/donate" className="block py-4 px-6 hover:text-gray-400">Donate</Link>
+        </li>
+        <li>
+          <Link to="/get_involved" className="block py-4 px-6 hover:text-gray-400">Get Involved</Link>
+        </li>
       </ul>
     </nav>
   );
