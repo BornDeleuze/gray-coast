@@ -1,20 +1,59 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-class NavBar extends React.Component {
-  render() {
-    return <>
-      <nav class="px-8 py-2 bg-gray-900 text-gray-200">
-        <ul class="flex justify-evenly uppercase">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          {/* <li><Link to="/contact">Contact</Link></li> */}
-          <li><Link to="/donate">Donate</Link></li>
-          <li><Link to="/get_involved">Get Involved</Link></li>
-        </ul>
-      </nav>
-    </>
-  }
-}
-export default NavBar
+const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="px-8 py-4 bg-gray-900 text-gray-200 relative z-50">
+      <div className="flex justify-between items-center relative">
+        <div className="flex-1">
+         {/* logo? */} fun
+        </div>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex flex-col justify-between w-7 h-6 z-50 relative"
+        >
+          <span
+            className={`block h-0.5 bg-gray-200 transition-transform duration-300 ease-in-out origin-center ${
+              menuOpen ? "rotate-45 translate-y-2.75" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 bg-gray-200 transition-all duration-300 ease-in-out origin-center ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 bg-gray-200 transition-transform duration-300 ease-in-out origin-center ${
+              menuOpen ? "-rotate-45 -translate-y-2.75" : ""
+            }`}
+          />
+        </button>
+      </div>
+      <ul
+        className={`fixed top-0 right-0 h-full w-2/5 bg-gray-900 text-gray-200 transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <li>
+          <Link to="/" className="block py-4 px-6 hover:text-gray-400">Home</Link>
+        </li>
+        <li>
+          <Link to="/about" className="block py-4 px-6 hover:text-gray-400">About</Link>
+        </li>
+        <li>
+          <Link to="/events" className="block py-4 px-6 hover:text-gray-400">Events</Link>
+        </li>
+        <li>
+          <Link to="/donate" className="block py-4 px-6 hover:text-gray-400">Donate</Link>
+        </li>
+        <li>
+          <Link to="/get_involved" className="block py-4 px-6 hover:text-gray-400">Get Involved</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default NavBar;
