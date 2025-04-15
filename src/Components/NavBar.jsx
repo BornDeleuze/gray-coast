@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className="px-8 py-4 bg-gray-900 text-gray-200 relative z-50">
       <div className="flex justify-between items-center relative">
         <div className="flex-1">
-         {/* logo? */}
+         {/* logo? */} fun
         </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
