@@ -1,17 +1,6 @@
 const Home = () => {
   return (
     <>
-      <div>
-        <a href="/">
-          <div class="relative">
-            <img src="/images/sunset.jpg" class="w-full" alt="Sunset"/>
-            <h5 class="absolute text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase drop-shadow-lg text-center">
-              Gray Coast Guildhall
-            </h5>
-          </div>
-        </a>
-      </div>
-
       <div class="text-center">
         <h1 class="text-2xl font-semibold">Welcome</h1>
         <div class="m-5 md:m-10 text-gray-800 leading-relaxed">
