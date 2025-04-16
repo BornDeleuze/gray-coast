@@ -6,9 +6,32 @@ const NavBar = () => {
 
   return (
     <nav className="px-8 py-4 bg-gray-900 text-gray-200 relative z-50">
-      <div className="flex justify-between items-center relative">
+      {/* DESKTOP */}
+      <div className="hidden md:flex justify-center relative">
+        <ul className="flex flex-row justify-center space-x-6">
+          <li>
+            <Link to="/" className="hover:text-gray-400">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-gray-400">About</Link>
+          </li>
+          <li>
+            <Link to="/events" className="hover:text-gray-400">Events</Link>
+          </li>
+          <li>
+            <Link to="/donate" className="hover:text-gray-400">Donate</Link>
+          </li>
+          <li>
+            <Link to="/get_involved" className="hover:text-gray-400">Get Involved</Link>
+          </li>
+        </ul>
+      </div>
+      
+
+        {/* HAMBURGER */}
+      <div className="md:hidden flex justify-between items-center relative">
         <div className="flex-1">
-         {/* logo? */} fun
+         {/* logo? */}
         </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
