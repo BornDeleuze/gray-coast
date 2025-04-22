@@ -1,8 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+
+// Navlink close hamburger
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
+// Click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
 
   return (
     <>
@@ -35,7 +66,11 @@ const NavBar = () => {
           {/* logo? */}
           </div>
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
+            ref={buttonRef}
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent click from bubbling to the outside click handler
+              setMenuOpen(!menuOpen);
+            }}
             className="md:hidden flex flex-col justify-between w-7 h-6 z-50 relative"
           >
             <span
@@ -56,24 +91,25 @@ const NavBar = () => {
           </button>
         </div>
         <ul
+         ref={menuRef}
           className={`fixed top-0 right-0 h-full w-2/5 bg-gray-900 text-gray-200 transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <li>
-            <Link to="/" className="block py-4 px-6 hover:text-gray-400">Home</Link>
+            <Link to="/" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Home</Link>
           </li>
           <li>
-            <Link to="/about" className="block py-4 px-6 hover:text-gray-400">About</Link>
+            <Link to="/about" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>About</Link>
           </li>
           <li>
-            <Link to="/events" className="block py-4 px-6 hover:text-gray-400">Events</Link>
+            <Link to="/events" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Events</Link>
           </li>
           <li>
-            <Link to="/donate" className="block py-4 px-6 hover:text-gray-400">Donate</Link>
+            <Link to="/donate" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Donate</Link>
           </li>
           <li>
-            <Link to="/get_involved" className="block py-4 px-6 hover:text-gray-400">Get Involved</Link>
+            <Link to="/get_involved" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Get Involved</Link>
           </li>
         </ul>
       </nav>
