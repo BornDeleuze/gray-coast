@@ -116,10 +116,10 @@ const NavBar = () => {
       {/* BANNER */}
       <div>
         <a href="/">
-          <div class="relative">
-            <img src="/images/sunset.jpg" class="w-full" alt="Sunset"/>
-            <div class="absolute inset-0"></div>
-            <h5 class="font-dmserif outline-5 px-4 py-2 absolute font-semibold tracking-wide text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999]">
+          <div className="relative">
+            <img src="/images/sunset.jpg" className="w-full" alt="Sunset"/>
+            <div className="absolute inset-0"></div>
+            <h5 className="font-dmserif outline-5 px-4 py-2 absolute font-semibold tracking-wide text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999]">
               Gray Coast Guildhall
             </h5>
           </div>
