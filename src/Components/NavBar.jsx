@@ -119,9 +119,15 @@ const NavBar = () => {
           <div className="relative">
             <img src="/images/sunset.jpg" className="w-full" alt="Sunset"/>
             <div className="absolute inset-0"></div>
-            <h5 className="font-dmserif outline-5 px-4 py-2 absolute font-semibold tracking-wide text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999]">
+            {/* <h5 className="outline-5 font-dmserif px-4 py-2 absolute font-semibold tracking-wide text-2xl sm:text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999] max-w-[90%]">
+              Gray Coast Guildhall
+            </h5> */}
+            <h5 className="lg:outline-5 font-dmserif px-4 py-2 absolute font-semibold tracking-wide text-2xl sm:text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999] max-w-[90%] break-words leading-snug">
               Gray Coast Guildhall
             </h5>
+            {/* <h5 className="font-dmserif px-4 py-2 absolute font-semibold tracking-wide text-2xl sm:text-3xl md:text-5xl text-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-center drop-shadow-[0_0_2px_#999999] max-w-[90%] break-words leading-snug">
+              Gray Coast Guildhall
+            </h5> */}
           </div>
         </a>
       </div>
