@@ -2,7 +2,6 @@ function Contact() {
 
   return (
     <>
-    hihihi
     </>
   )
 }

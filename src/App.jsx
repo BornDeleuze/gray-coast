@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Router>
-        <div class="text-gray-600">
+        <div className="text-gray-600">
           <div>
            <NavBar/>
               <Routes>
