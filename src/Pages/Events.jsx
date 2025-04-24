@@ -10,8 +10,8 @@ const Events = () => {
            by donation or sliding scale – no one turned away for lack of funds. There is no alcohol
            allowed at public events.
          </p>
-         <div className="mt-8 flex justify-center">
-            <img
+         <div className="my-6 flex justify-center">
+         <img
             src="/images/solstice.jpg"
             className="w-full max-w-3xl rounded-lg shadow-md"
             alt="Theatre Stage"
@@ -21,8 +21,16 @@ const Events = () => {
            We have a house sound system and basic theater lighting, and can seat around 100 people at
            maximum capacity.
          </p>
+
          <p>
-           Events are hosted by Guildhall volunteers who have been oriented on how to run events, work
+            We are working to make this nearly 100-year-old building more accessible. Currently, 
+            there is one main entrance with six stairs, and a side entrance with a ramp. The bathroom 
+            and various other parts of the building are accessible without stairs, but many features remain 
+            as originally designed before modern accessibility standards were in place.
+         </p>
+
+         <p>
+           Shows and other events are hosted by Guildhall volunteers who have been oriented on how to run events, work
            the lights and sound, and manage other event details. Because of this, our ability to host
            events depends entirely on the interest and availability of our volunteers!
          </p>
