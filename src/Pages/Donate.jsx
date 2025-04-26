@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Donate = () => {
    return (
      <div className="px-4 py-8 max-w-4xl mx-auto">
@@ -34,10 +35,9 @@ const Donate = () => {
              or become a monthly supporter on <strong>Patreon</strong>.
            </p>
            <p className="mt-2">
-             Interested in making a larger donation or sending a check?{" "}
-             <a href="mailto:graycoastguildhall@gmail.com" className="underline text-blue-600">
-               Get in touch!
-             </a>
+             Interested in making a larger donation or sending a check? Reach out with our 
+             <Link to="/contact" className="hover:text-gray-400"> <strong>Contact Page</strong> </Link> 
+            form!
            </p>
          </div>
          <div className="my-8 flex justify-center">

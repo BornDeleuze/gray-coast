@@ -34,19 +34,58 @@ const Events = () => {
            the lights and sound, and manage other event details. Because of this, our ability to host
            events depends entirely on the interest and availability of our volunteers!
          </p>
+         
          <p>
            For more information about performing at the Guildhall, or being trained to host events as a
-           volunteer, reach out to{" "}
-           <a href="mailto:events.graycoastguildhall@gmail.com" className="text-blue-600 underline">
-             events.graycoastguildhall@gmail.com
-           </a>
+           volunteer, reach out to the events team with this form:
+          <div className="mt-10 flex justify-center">
+            <div className="w-full max-w-md bg-gray-90 p-6 rounded-2xl shadow-lg border border-gray-200">
+              <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Send us a message</h2>
+                <form
+                  action="https://formsubmit.co/b5dfc263e8443134f718861827588051"
+                  method="POST"
+                  className="space-y-5"
+                >
+                <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="email">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                  required
+                />
+                </div>
+                <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="message">
+                  Your Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition resize-none"
+                  required
+                ></textarea>
+                </div>
+                <div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-2 px-4 rounded-md font-semibold hover:brightness-110 transition-shadow shadow-md hover:shadow-lg"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
          </p>
          <p>
            The Guildhall is also open to private rentals for those looking to host closed events such
-           as youth camps, private gatherings, music lessons, weddings, and more. Contact{" "}
-           <a href="mailto:graycoastguildhall@gmail.com" className="text-blue-600 underline">
-             graycoastguildhall@gmail.com
-           </a>{" "}
+           as youth camps, private gatherings, music lessons, weddings, and more. Visit our Contact page
            for more information about private rental policies and fees.
          </p>
        </div>
