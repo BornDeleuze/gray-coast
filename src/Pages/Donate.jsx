@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Donate = () => {
    return (
      <div className="px-4 py-8 max-w-4xl mx-auto">
@@ -30,14 +31,16 @@ const Donate = () => {
          </ul>
          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-md text-blue-800">
            <p>
-             There are many ways to donate! Use the buttons above to make a one-time donation via <strong>Venmo</strong>,
-             or become a monthly supporter on <strong>Patreon</strong>.
+             There are many ways to donate! You can make a one-time donation via Venmo
+             <Link to="https://www.patreon.com/graycoastguildhall" className="hover:text-gray-400"> <strong></strong> </Link> 
+             or become a monthly supporter on
+             <Link to="https://www.patreon.com/graycoastguildhall" className="hover:text-gray-400"> <strong>Patreon.</strong> </Link> 
+
            </p>
            <p className="mt-2">
-             Interested in making a larger donation or sending a check?{" "}
-             <a href="mailto:graycoastguildhall@gmail.com" className="underline text-blue-600">
-               Get in touch!
-             </a>
+             Interested in making a larger donation or sending a check? Reach out with our 
+             <Link to="/contact" className="hover:text-gray-400"> <strong>Contact Page</strong> </Link> 
+            form!
            </p>
          </div>
          <div className="my-8 flex justify-center">
