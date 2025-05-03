@@ -6,7 +6,7 @@ const NotFound = () => {
         Sorry, we couldn’t find the page you were looking for.
       </p>
       <p className="text-lg text-gray-600 mb-8">
-        Maybe you followed a broken link, or typed something wrong. It happens!
+        Could be a link was broken, could be that you broke it. Hard tellin not knowin.
       </p>
       <a
         href="/"
