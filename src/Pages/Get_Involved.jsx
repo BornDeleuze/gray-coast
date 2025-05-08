@@ -13,8 +13,14 @@ const GetInvolved = () => {
            donate money to support this project and our many building repairs.
          </p>
          <p>
-            Reach out on our conact page form to be added to our monthly mailing list where we share 
+            Reach out on our <a href="/contact" className="text-blue-600 underline">Contact</a> page form if you're looking for ways to plug in, or to be
+            added to our monthly mailing list where we share 
             information about upcoming events, work parties, and other ways to plug in.
+         </p>
+         <p>
+            Wanna play here?! Reach out to our events team on 
+            the <a href="/events" className="text-blue-600 underline">Events</a> page 
+            form to inquire about setting up a show or getting added to a bill already being cooked up.
          </p>
          <p>
            Whether you have a special skill set or an idea of how you’d like to support this project,

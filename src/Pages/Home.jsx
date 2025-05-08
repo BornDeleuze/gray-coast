@@ -12,7 +12,7 @@ const Home = () => {
           </div>
           <div>
           <p className="text-xl font-semibold p-4 border-t-4 border-gray-900">Upcoming and Recent Events</p>
-          {/* <InstagramGrid/> */}
+          <InstagramGrid/>
         </div>
       </div>
     </>

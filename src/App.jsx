@@ -4,6 +4,7 @@ import About from './Pages/About';
 import Events from './Pages/Events';
 import Contact from './Pages/Contact';
 import Donate from './Pages/Donate';
+import NotFound from './Pages/Not_Found.jsx';
 import GetInvolved from './Pages/Get_Involved';
 import NavBar from './Components/NavBar.jsx';
 
@@ -23,6 +24,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/donate" element={<Donate />} />
                 <Route path="/get_involved" element={<GetInvolved />} />
+                {/* 404 page */}
+                <Route path="*" element={<NotFound />} />
               </Routes>
           </div>
         </div>

@@ -114,6 +114,9 @@ const NavBar = () => {
           <li>
             <Link to="/get_involved" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Get Involved</Link>
           </li>
+          <li>
+            <Link to="/contact" className="block py-4 px-6 hover:text-gray-400" onClick={handleLinkClick}>Contact</Link>
+          </li>
         </ul>
       </nav>
       {/* BANNER */}

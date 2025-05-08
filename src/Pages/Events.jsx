@@ -34,13 +34,13 @@ const Events = () => {
            the lights and sound, and manage other event details. Because of this, our ability to host
            events depends entirely on the interest and availability of our volunteers!
          </p>
-         
+
          <p>
            For more information about performing at the Guildhall, or being trained to host events as a
-           volunteer, reach out to the events team with this form:
+           volunteer, reach out to the Events Team with this form:
           <div className="mt-10 flex justify-center">
             <div className="w-full max-w-md bg-gray-90 p-6 rounded-2xl shadow-lg border border-gray-200">
-              <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Send us a message</h2>
+              <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Message our Events Team</h2>
                 <form
                   action="https://formsubmit.co/b5dfc263e8443134f718861827588051"
                   method="POST"
@@ -85,7 +85,7 @@ const Events = () => {
          </p>
          <p>
            The Guildhall is also open to private rentals for those looking to host closed events such
-           as youth camps, private gatherings, music lessons, weddings, and more. Visit our Contact page
+           as youth camps, private gatherings, music lessons, weddings, and more. Visit our Contact page to reach out
            for more information about private rental policies and fees.
          </p>
        </div>
