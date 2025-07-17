@@ -10,9 +10,9 @@ const InstagramGrid = () => {
 
   return (
     <iframe
-      src="//lightwidget.com/widgets/b7f2a79dca2c5f56bad33f9239430e48.html"
-      scrolling="no"
-      allowTransparency="true"
+      src="https://cdn.lightwidget.com/widgets/b7f2a79dca2c5f56bad33f9239430e48.html" 
+      scrolling="no" 
+      allowtransparency="true" 
       className="lightwidget-widget"
       style={{
         width: "100%",
@@ -20,8 +20,8 @@ const InstagramGrid = () => {
         overflow: "hidden",
         aspectRatio: "1 / 1",
       }}
-      title="Instagram Feed"
-    ></iframe>
+        title="Instagram Feed">
+    </iframe>
   );
 };
 
